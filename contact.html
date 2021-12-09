@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>vivo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        background-color: rgb(233, 233, 233);
+      }
+      .mio {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body class="body m-auto">
+    <div class="mio bg-light">
+      <h2 class="text-dark float-start">vivo</h2>
+      <nav class="navbar navbar-expand-sm font-monospace float-none">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="home.html" class="btn bg-transparent text-dark" role="button" id="dropdownMenuLink" aria-expanded="false"> Home</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="contact.html" class="btn bg-transparent text-dark" role="button" id="dropdownMenuLink" aria-expanded="false"> contant </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="btn bg-transparent dropdown-toggle text-dark" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> lainnya </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink ">
+                  <li><a class="dropdown-item" href="biodata.html">Biodata</a></li>
+                  <li><a class="dropdown-item" href="gallery.html">galellry</a></li>
+                  <li><a class="dropdown-item" href="Mahakarya.html">mahakarya</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container mt-3">
+      <h2>Registrasi</h2>
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+          <label for="name">Nama:</label>
+          <input type="text" class="form-control" id="name" placeholder="Masukkan Nama anda" name="email" />
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Masukkan email anda" name="email" />
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="data">tanggal Lahir:</label>
+          <input type="datetime-local" class="form-control" id="tanggal lahir" placeholder="masukkan Tanggal lahir " name="email" />
+        </div>
+        <div class="mb-3">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" />
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="jk">jenis kelamin:</label>
+          <input type="radio" value="Laki-laki" />laki-laki <input type="radio" name="Perempuan" value="Perempuan" />Perempuan
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="email">Email:</label>
+          <select name="agama" id="agama">
+            <option value="kristen_protestan">Kristen protestan</option>
+            <option value="islam">Islam</option>
+            <option value="hindu">Hindu</option>
+            <option value="buddah">Budda</option>
+            <option value="Advent">Advent</option>
+          </select>
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="name">Hobby:</label>
+          <input type="checkbox" value="badminton" />Badminton <input type="checkbox" value="basket" />Basket <input type="checkbox" value="voly" />Voly <input type="checkbox" value="futsal" />Futsal
+          <input type="checkbox" value="tenis_meja" />Tenis meja
+        </div>
+        <div class="form-check mb-3">
+          <label class="form-check-label"> <input class="form-check-input" type="checkbox" name="remember" /> Remember me </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <!--untuk footer-->
+    <div class="container-fluid mt-2 text-center">
+      <div class="row">
+        <div class="col p-3 bg-secondary text-black">Crate by @PahalaAlbertRajagukguk</div>
+      </div>
+      <div>
+        <div class="col p-3 bg-secondary text-black">© FTI UNAI 2020</div>
+      </div>
+    </div>
+  </body>
+</html>
